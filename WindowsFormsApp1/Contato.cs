@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
             }
             set
             {
-                if (value.Length ==13)
+                if (value.Length == 13)
                 {
                     telefone = value;
                 }
@@ -50,12 +50,22 @@ namespace WindowsFormsApp1
                 {
                     telefone = "(00) 00000-0000";
                 }
-            } 
+            }
         }
 
-        public contato()
+        public Contato()
         {
-            Nome= "Cláudia"
+            Nome = "Cláudia";
+            Sobrenome = "Josefa";
+            Telefone = "(00) 11111-1111";
+        }
+
+        public Contato(string nome, string sobrenome, string telefone)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Telefone = telefone;
+
         }
     }
 }
