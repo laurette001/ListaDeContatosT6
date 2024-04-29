@@ -67,6 +67,17 @@ namespace WindowsFormsApp1
             Telefone = telefone;
 
         }
+
+        public override string ToString()
+        {
+            string saída = string.Empty;
+            saída +=String.Format("{0} {1}", Nome, Sobrenome);
+            saída +=String.Format("({0}) {1}-{2}",
+             Telefone.Substring(0,2), 
+             Telefone.Substring(3,5),
+             Telefone.Substring(7,4));
+
+        }
     }
 }
          
